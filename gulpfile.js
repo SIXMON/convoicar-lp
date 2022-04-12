@@ -73,6 +73,7 @@ const paths = {
   }
 };
 
+
 /**
  * Push build to gh-pages
  */
