@@ -1,0 +1,231 @@
+//
+// type.scss
+// Extended from Bootstrap
+//
+
+// Font
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Light.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Light.svg#Lato-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-LightItalic.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-LightItalic.svg#Lato-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Regular.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Italic.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Italic.svg#Lato-Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-Bold.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-Bold.svg#Lato-Bold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$path-to-fonts}/Lato/Lato-BoldItalic.eot');
+  src: url('#{$path-to-fonts}/Lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.woff2') format('woff2'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.woff') format('woff'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.ttf') format('truetype'),
+      url('#{$path-to-fonts}/Lato/Lato-BoldItalic.svg#Lato-BoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+// Headings
+
+h1, h2,
+.h1, .h2 {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  letter-spacing: $headings-letter-spacing;
+}
+
+h1, .h1 {
+  line-height: $h1-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h1-font-size-md;
+  }
+}
+
+h2, .h2 {
+  line-height: $h2-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h2-font-size-md;
+  }
+}
+
+h3, .h3 {
+  line-height: $h3-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h3-font-size-md;
+  }
+}
+
+h4, .h4 {
+  line-height: $h4-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $h4-font-size-md;
+  }
+}
+
+h5, .h5 {
+  line-height: $h5-line-height;
+}
+
+h6, .h6 {
+  line-height: $h6-line-height;
+
+  &.text-uppercase {
+    letter-spacing: .08em;
+  }
+}
+
+
+// Display
+
+.display-1, .display-2, .display-3, .display-4 {
+  letter-spacing: $display-letter-spacing;
+}
+
+.display-1 {
+  line-height: $display1-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $display1-size-md;
+  }
+}
+
+.display-2 {
+  line-height: $display2-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $display2-size-md;
+  }
+}
+
+.display-3 {
+  line-height: $display3-line-height;
+
+  @include media-breakpoint-down(md) {
+    font-size: $display3-size-md;
+  }
+}
+
+.display-4 {
+  line-height: $display4-line-height;
+  font-weight: $font-weight-bold;
+
+  @include media-breakpoint-down(md) {
+    font-size: $display4-size-md;
+  }
+}
+
+
+// Lead
+
+.lead {
+
+  @include media-breakpoint-down(md) {
+    font-size: $lead-font-size-md;
+  }
+}
+
+
+// Blockquote
+
+.blockquote-img {
+  max-height: 2.5rem;
+  max-width: 100%;
+  width: auto;
+}
+
+.blockquote-footer {
+
+  &::before {
+    display: none;
+  }
+}
+
+
+// Social list
+
+.list-social-icon {
+  width: 35px;
+  height: auto;
+}
+
+
+// Dividers
+
+.hr-sm {
+  width: 60px;
+  border-top-width: $border-width * 2;
+}
+
+.hr-md {
+  width: 100px;
+  border-top-width: $border-width * 2;
+}
+
+
+// Code
+
+code {
+  line-height: $code-line-height;
+}

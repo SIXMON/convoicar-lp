@@ -1,0 +1,55 @@
+//
+// images.scss
+// Extended from Bootstrap
+//
+
+//
+// Skewed
+//
+
+.img-skewed {
+  perspective: 1500px;
+  transform-style: preserve-3d;
+}
+
+// Left
+
+.img-skewed-left {
+  perspective-origin: left center;
+
+  .img-skewed-item {
+    transform: rotateY(-$img-skewed-rotate-y) rotateX($img-skewed-rotate-x);
+    backface-visibility: hidden;
+  }
+}
+
+// Right
+
+.img-skewed-right {
+  perspective-origin: right center;
+
+  .img-skewed-item {
+    transform: rotateY($img-skewed-rotate-y) rotateX($img-skewed-rotate-x);
+    backface-visibility: hidden;
+  }
+}
+
+// Animation home
+
+.img-alternative {
+  width: 100%;
+  height: 400px;
+  background: no-repeat center center;
+  background-size: contain;
+  animation: bgChange infinite 8s;
+
+  @keyframes bgChange {
+    0%, 20% {
+      background-image: url('../img/anim-home-brikks.png');
+    }
+    50%, 100% {
+      background-image: url('../img/anim-home-brikks2.png');
+    }
+  }
+} 
+
