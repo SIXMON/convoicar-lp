@@ -73,15 +73,12 @@ const paths = {
   }
 };
 
-var options = { 
-  remoteUrl: "https://github.com/SIXMON/convoicar-lp",
-  branch: "main"};
 /**
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
-    .pipe(deploy(options))
+    .pipe(deploy())
 });
 
 
