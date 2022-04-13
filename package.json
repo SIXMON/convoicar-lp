@@ -19,6 +19,7 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-if": "^3.0.0",
     "gulp-npm-dist": "^1.0.3",
+    "gulp-real-favicon": "^0.3.2",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
