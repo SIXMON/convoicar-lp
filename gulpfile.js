@@ -126,6 +126,9 @@ gulp.task('browsersync', function(callback) {
       else if (req.url === '/presentation-de-vehicule-genius') {
         req.url = '/presentation-de-vehicule-genius.html';
       }    
+      else if (req.url === '/thanks') {
+        req.url = '/thanks.html';
+      }    
       return next();
     }
   });

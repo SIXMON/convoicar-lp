@@ -65,67 +65,74 @@
             </section>
 
             <!-- Form -->
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <input type="text" name="firstName" class="form-control" id="registrationFirstName" placeholder="Prénom *" required>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <input type="text" name="lastName" class="form-control" id="registrationLastName" placeholder="Nom *" required>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <input type="number" name="codePostal" class="form-control" id="registrationFirstName" placeholder="Code Postal *" required>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="form-group">
-                  <input type="tel" name="phone" class="form-control" id="registrationLastName" placeholder="Téléphone *" required>
-                </div>
-              </div>
-            </div>
+            <form action="https://formsubmit.co/070688fd3b91e3b1c100b38a2392c6d2" method="POST" />
+            
+              <input type="hidden" name="_webhook" value="https://script.google.com/macros/s/AKfycbywJpSut4RXrRnCmV41j-Q7JbuhrkC9g05sOZ8uJJ2uZFYLk-U/exec">
+              <input type="hidden" name="_next" value="https://convoicar.fr/thanks.html">
+              <input type="hidden" name="_subject" value="Nouveau Contact Brikks">
+              <input type="hidden" name="_captcha" value="true">
 
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  <input type="email" name="email" class="form-control" id="registrationEmail" placeholder="Email *" required>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="firstName" class="form-control" id="registrationFirstName" placeholder="Prénom *" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <input type="text" name="lastName" class="form-control" id="registrationLastName" placeholder="Nom *" required>
+                  </div>
                 </div>
               </div>
-            </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <input type="number" name="codePostal" class="form-control" id="registrationFirstName" placeholder="Code Postal *" required>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group">
+                    <input type="tel" name="phone" class="form-control" id="registrationLastName" placeholder="Téléphone *" required>
+                  </div>
+                </div>
+              </div>
 
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  <select id="vous" name="profession" type="text" class="custom-select" placeholder="Vous êtes? *" required>
-                    <option hidden>Vous êtes ?</option>
-                    <option>professionnel de l'auto</option>
-                    <option>gestionnaire de flotte</option>
-                    <option>automobiliste</option>   
-                    <option>autre</option>  
-                  </select>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" id="registrationEmail" placeholder="Email *" required>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  <textarea class="form-control" name="message" id="contactMessage" rows="2" placeholder="Message"></textarea>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <select id="vous" name="profession" type="text" class="custom-select" placeholder="Vous êtes? *" required>
+                      <option hidden>Vous êtes ?</option>
+                      <option>professionnel de l'auto</option>
+                      <option>gestionnaire de flotte</option>
+                      <option>automobiliste</option>   
+                      <option>autre</option>  
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-12">
-                <button type = "submit" class="btn btn-block btn-primary mt-3 lift">
-                  Découvrir BRIKKS
-                </button>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" id="contactMessage" rows="2" placeholder="Message"></textarea>
+                  </div>
+                </div>
               </div>
-            </div>
-          </form>
+              <div class="row justify-content-center">
+                <div class="col-12">
+                  <button type = "submit" class="btn btn-block btn-primary mt-3 lift">
+                    Découvrir BRIKKS
+                  </button>
+                </div>
+              </div>
+            </form>
 
           </div>
         </div> <!-- / .row -->
