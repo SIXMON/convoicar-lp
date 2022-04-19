@@ -52,3 +52,14 @@
     font-size: $icon-circle-font-size;
   }
 }
+
+// Stars
+.icon-star {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url('../img/star.svg') no-repeat center center;
+  background-size: contain;
+  margin: 0 2px;
+}
+

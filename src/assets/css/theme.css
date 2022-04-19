@@ -10438,6 +10438,13 @@ a.badge-primary-desat-soft:hover, a.badge-primary-desat-soft:focus {
     border: 0;
     padding: 0; }
 
+@media (max-width: 1199.98px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: center; }
+    .d-flex p {
+      text-align: center; } }
+
 .border-secondary {
   border-color: #fdc947 !important; }
 
@@ -11196,6 +11203,9 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     transform: scale(0.9); } }
 
 .navbar .navbar-toggler {
+  position: absolute;
+  top: 10px;
+  right: 0;
   margin-left: auto; }
 
 .navbar-collapse .navbar-toggler {
@@ -13052,6 +13062,14 @@ ul > li > a {
   border-radius: 50%; }
   .icon-circle > .fe {
     font-size: 1.875rem; }
+
+.icon-star {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../img/star.svg") no-repeat center center;
+  background-size: contain;
+  margin: 0 2px; }
 
 .list {
   margin-bottom: 0;
