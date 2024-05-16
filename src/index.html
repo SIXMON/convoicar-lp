@@ -7,10 +7,6 @@
     })
   </head>
   <body class="bg-light">
-    <!-- BANNER
-    ================================================== -->
-    @@include("partials/banner.html")
-
     <!-- MODALS
     ================================================== -->
     @@include("partials/modals.html")
@@ -39,8 +35,8 @@
             
             <!-- Heading -->
             <h1 class="display-3">
-              Le N°1 des services de mobilité<br>
-              <span class="text-primary" data-toggle="typed" data-options="{&quot;strings&quot;: [&quot;pour votre concession&quot;, &quot;pour votre atelier&quot;, &quot;pour votre flotte&quot;]}"></span>
+              Rentabiliser vos véhicules de courtoisie<br>
+              <span class="text-primary" data-toggle="typed" data-options="{&quot;strings&quot;: [&quot;pour votre concession&quot;, &quot;pour votre atelier&quot;]}"></span>
             </h1>
 
             <!-- Text -->
@@ -183,31 +179,7 @@
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-              <a class="card-img-top" href="@@webRoot/gestion-mobilite-douce" style="max-height: 200px;">
-                <img src="assets/img/trottinette.png" alt="brikks service de jockey après vente" class="card-img-top" />
-                <div class="position-relative">
-                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-                    @@include("assets/img/shapes/curves/curve-3.svg")
-                  </div>
-                </div>
-              </a>
-
-              <a class="card-body text-center" href="@@webRoot/gestion-mobilite-douce">
-                <h3>
-                  Gestion de la mobilité douce
-                </h3>
-                <p class="mb-0 text-muted">
-                  Trottinette / Vélo ou Scooter, la
-                  mobilité de proximité
-                  adaptée aux concessions
-                  urbaines et rurales.
-                </p>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
-              <a class="card-img-top" href="@@webRoot/gestion-vehicule-courtoisie" style="max-height: 200px;">
+              <a class="card-img-top" href="@@webRoot/rentabilisation-vehicule" style="max-height: 200px;">
                 <img src="assets/img/courtoisie.png" alt="brikks livraison de véhicule" class="card-img-top" />
                 <div class="position-relative">
                   <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
@@ -215,20 +187,19 @@
                   </div>
                 </div>
               </a>
-
-              <a class="card-body text-center" href="@@webRoot/gestion-vehicule-courtoisie">
+              <a class="card-body text-center" href="@@webRoot/rentabilisation-vehicule">
                 <h3>
-                  Gestion des véhicules de courtoisie
+                  Rentabilisation véhicules de courtoisie
                 </h3>
                 <p class="mb-0 text-muted">
-                  Une prise de rendez-vous en
-                  ligne pour faciliter la gestion de
-                  vos flottes de véhicules de
-                  courtoisie.
+                  Faites des véhicules de courtoisie
+                  une opportunité de CA
+                  plutôt qu'un poste de coût
                 </p>
               </a>
             </div>
           </div>
+          
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <div class="card mb-6 mb-md-0 shadow-light-lg lift lift-lg">
               <a class="card-img-top" href="@@webRoot/gestion-de-jockey" style="max-height: 200px;">
@@ -242,7 +213,7 @@
 
               <a class="card-body text-center" href="@@webRoot/gestion-de-jockey">
                 <h3>
-                  Gestion du service jockey
+                  Gestion du service Jockey
                 </h3>
                 <p class="mb-0 text-muted">
                   Éviter à vos clients
@@ -252,6 +223,32 @@
               </a>
             </div>
           </div>
+
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card mb-6 mb-lg-0 shadow-light-lg lift lift-lg">
+              <a class="card-img-top" href="@@webRoot/gestion-mobilite-douce" style="max-height: 200px;">
+                <img src="assets/img/trottinette.png" alt="brikks service de jockey après vente" class="card-img-top" />
+                <div class="position-relative">
+                  <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+                    @@include("assets/img/shapes/curves/curve-3.svg")
+                  </div>
+                </div>
+              </a>
+              <a class="card-body text-center" href="@@webRoot/gestion-mobilite-douce">
+                <h3>
+                  Gestion des mobilités douce
+                </h3>
+                <p class="mb-0 text-muted">
+                  Vous souhaitez intégrer
+                  la mobilité douce à
+                  vos services atelier ?
+                  Brikks vous permet de
+                  la gérer digitalement
+                </p>
+              </a>
+            </div>
+          </div>
+
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
@@ -328,7 +325,7 @@
                   <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
                 </div>
                 <p class="mb-3 text-muted">
-                  J’ai connu le service proposé par BRIKKS (ex Convoicar) au sein de ma concession.<br />
+                  J’ai connu le service proposé par BRIKKS au sein de ma concession.<br />
                   Ils font preuves d’une très bonne réactivé et nous apportent toujours une solution pour nos clients.<br />
                   Je suis très satisfaite de mon expérience avec BRIKKS et avoir un contact privilégié est un énorme plus.
                 </p>
@@ -346,7 +343,7 @@
                   <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
                 </div>
                 <p class="mb-3 text-muted">
-                  J’ai découvert le service BRIKKS (ex Convoicar) par internet. Grâce à eux, les sorties de véhicules sont fluidifiées et la prestation est de qualité.<br />
+                  J’ai découvert le service BRIKKS par internet. Grâce à eux, les sorties de véhicules sont fluidifiées et la prestation est de qualité.<br />
                   Le retour des véhicules est rapide et la prestation premium est un réel plus pour nos clients.<br />
                   Je recommanderai BRIKKS pour leur efficacité et leur bonne communication.
                 </p>
@@ -364,7 +361,7 @@
                   <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
                 </div>
                 <p class="mb-3 text-muted">
-                  BRIKKS (ex Convoicar) m’a été recommandé par une connaissance.<br />
+                  BRIKKS m’a été recommandé par une connaissance.<br />
                   Nous avions un besoin important en conciergerie pour fluidifier les entrées et sorties des véhicules.<br />
                   BRIKKS nous a donc semblé être la solution idéale ! Je recommande BRIKKS pour leur disponibilité et efficacité !
                 </p>

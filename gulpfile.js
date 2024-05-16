@@ -88,9 +88,7 @@ gulp.task('browsersync', function(callback) {
       baseDir: [paths.src.tmp.dir, paths.src.base.dir, paths.base.base.dir]
     },
     middleware: function(req,res,next) {
-      if (req.url === '/devenir-jockey') {
-        req.url = '/devenir-jockey.html';
-      } else if (req.url === '/les-jockeys') {
+      if (req.url === '/les-jockeys') {
         req.url = '/les-jockeys.html';
       } else if (req.url === '/plateforme-de-gestion') {
         req.url = '/plateforme-de-gestion.html';
@@ -99,8 +97,7 @@ gulp.task('browsersync', function(callback) {
                  req.url === '/service-de-jockey-apres-vente' || 
                  req.url === '/convoicar-pour-les-automobilistes' || 
                  req.url === '/convoicar-pour-les-pros/logo-en-ligne-convoicar' || 
-                 req.url === '/convoicar-pour-les-pros/main/' || 
-                 req.url === '/service-de-jockey') {
+                 req.url === '/convoicar-pour-les-pros/main/' ) {
         req.url = '/service-de-jockey.html';
       } else if (req.url === '/qui-sommes-nous') {
         req.url = '/qui-sommes-nous.html';
@@ -117,18 +114,17 @@ gulp.task('browsersync', function(callback) {
       else if (req.url === '/gestion-mobilite-douce') {
         req.url = '/gestion-mobilite-douce.html';
       }     
-      else if (req.url === '/gestion-vehicule-courtoisie') {
-        req.url = '/gestion-vehicule-courtoisie.html';
+      else if (req.url === '/rentabilisation-vehicule') {
+        req.url = '/rentabilisation-vehicule.html';
       }  
-      else if (req.url === '/audit-mobilite-en-concession') {
-        req.url = '/audit-mobilite-en-concession.html';
-      }    
       else if (req.url === '/presentation-de-vehicule-genius') {
         req.url = '/presentation-de-vehicule-genius.html';
       }    
       else if (req.url === '/thanks') {
         req.url = '/thanks.html';
-      }    
+      } else if (req.url === '/blog') {
+        req.url = '/blog.html'
+      }
       return next();
     }
   });
