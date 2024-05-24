@@ -11674,14 +11674,16 @@ code {
   background-size: contain;
   /* animation: bgChange infinite 8s; */
   background-image: url("../img/anim-home-brikks2.png");
-}
-/*
-@keyframes bgChange {
-  0%, 20% {
-    background-image: url("../img/anim-home-brikks.png"); }
-  50%, 100% {
-    background-image: url("../img/anim-home-brikks2.png"); } }
-*/
+  /*
+  @keyframes bgChange {
+    0%, 20% {
+      background-image: url('../img/anim-home-brikks.png');
+    }
+    50%, 100% {
+      background-image: url('../img/anim-home-brikks2.png');
+    }
+  }
+  */ }
 
 .overlay {
   position: relative; }

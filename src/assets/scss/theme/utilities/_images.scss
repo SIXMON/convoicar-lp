@@ -41,8 +41,9 @@
   height: 400px;
   background: no-repeat center center;
   background-size: contain;
-  animation: bgChange infinite 8s;
-
+  /* animation: bgChange infinite 8s; */
+  background-image: url('../img/anim-home-brikks2.png');
+  /*
   @keyframes bgChange {
     0%, 20% {
       background-image: url('../img/anim-home-brikks.png');
@@ -51,5 +52,6 @@
       background-image: url('../img/anim-home-brikks2.png');
     }
   }
+  */
 } 
 
