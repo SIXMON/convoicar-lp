@@ -7,7 +7,7 @@
 
 
     <!-- Primary Meta Tags -->
-    <title>Landkit</title>
+    <title data-translate=@@data-translate>Landkit</title>
     <meta name="title" content="Brikks Services de Jockeys">
     <meta name="description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
 
@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="../assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="../assets/libs/quill/dist/quill.core.css" />
     <link rel="stylesheet" href="../assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.2/css/flag-icons.min.css">
 
     <!-- Map -->
     <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' /> -->
@@ -118,7 +120,13 @@
 
           <!-- Button -->
           <ul class="navbar-nav ml-auto">
-            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://client.convoicar.fr/" target="_blank">
+            <!--
+              <select id="language-selector">
+                <option value="fr">🇫🇷</option>
+                <option value="es">🇪🇸</option>
+              </select> 
+            !-->
+            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://app.brikks.co" target="_blank">
               Se connecter
             </a>
             <a class="navbar-btn btn btn-sm btn-primary lift m-1" href="../contact" target="_blank">
@@ -672,6 +680,7 @@
     <!-- Theme JS -->
     <script src="../assets/js/theme.min.js"></script>
 
+    <script src="../assets/js/i18n.js"></script>
 
   </body>
 </html>

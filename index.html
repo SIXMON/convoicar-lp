@@ -8,7 +8,7 @@
 
 
     <!-- Primary Meta Tags -->
-    <title>Brikks, plateforme de gestion des mobilités</title>
+    <title data-translate=pageTitle>Brikks, plateforme de gestion des mobilités</title>
     <meta name="title" content="Brikks Services de Jockeys">
     <meta name="description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
 
@@ -37,6 +37,8 @@
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
     <link rel="stylesheet" href="./assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.2/css/flag-icons.min.css">
 
     <!-- Map -->
     <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' /> -->
@@ -118,7 +120,13 @@
 
           <!-- Button -->
           <ul class="navbar-nav ml-auto">
-            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://client.convoicar.fr/" target="_blank">
+            <!--
+              <select id="language-selector">
+                <option value="fr">🇫🇷</option>
+                <option value="es">🇪🇸</option>
+              </select> 
+            !-->
+            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://app.brikks.co" target="_blank">
               Se connecter
             </a>
             <a class="navbar-btn btn btn-sm btn-primary lift m-1" href="./contact" target="_blank">
@@ -135,7 +143,7 @@
     <!-- WELCOME
     ================================================== -->
     <section class="position-relative py-8 py-md-11 mb-3">
-      
+
       <!-- Content -->
       <div class="container">
         <div class="row align-items-center">
@@ -148,14 +156,14 @@
           <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
             
             <!-- Heading -->
-            <h1 class="display-3">
-              Rentabiliser vos véhicules de courtoisie<br>
+            <h1 class="display-3" data-translate="pageTitle">
+              Brikks, plateforme de gestion des mobilités<br>
               <span class="text-primary" data-toggle="typed" data-options="{&quot;strings&quot;: [&quot;pour votre concession&quot;, &quot;pour votre atelier&quot;]}"></span>
             </h1>
 
             <!-- Text -->
             <p class="lead text-muted mb-6 mb-md-8">
-              En diminuant vos charges
+              Gérer vos mobilités depuis une seule plateforme
             </p>
 
             <!-- Buttons -->
@@ -303,7 +311,7 @@
               </a>
               <a class="card-body text-center" href="./rentabilisation-vehicule">
                 <h3>
-                  Rentabilisation véhicules de courtoisie
+                  <span class="text-primary">Concessionaires</span> : Rentabilisez vos véhicules de courtoisie
                 </h3>
                 <p class="mb-0 text-muted">
                   Faites des véhicules de courtoisie
@@ -330,7 +338,9 @@
                   Gestion du service Jockey
                 </h3>
                 <p class="mb-0 text-muted">
-                  Rationalisez l’utilisation de votre flotte de courtoisie en la complétant d’un service de Jockey
+                  Éviter à vos clients
+                  automobilistes de perdre 4H
+                  pour l’entretien ou la révision.
                 </p>
               </a>
             </div>
@@ -374,14 +384,14 @@
             
             <!-- Heading -->
             <h2 class="font-weight-bold">
-              BRIKKS, le digital au service de la performance
+              BRIKKS, un acteur 100% digitalisé
             </h2>
 
             <!-- Text -->
             <p class="font-size-lg text-muted text-justify mb-5">
-              Brikks met à disposition de ses clients une plateforme qui permet de suivre et optimiser la gestion financière et logistique de ses véhicules de courtoisie
+              Brikks met à disposition de ses clients une plateforme qui gère vos demandes en service de mobilité de manière simple et rapide.
               <br><br>
-              L’univers digital né de 8 ans d’expertise s’intègre aisément aux DMS des concessions
+              L’univers digital déployé permet aux professionnels de l’automobile de proposer de nouveaux services à leurs clients sur un interface 100 % digital.
             </p>
             <a href="./plateforme-de-gestion" class="btn btn-primary mb-6 mb-md-0 lift">
               Découvrir <i class="fe fe-arrow-right ml-3"></i>
@@ -672,18 +682,8 @@
                   </a>
                 </li>
                 <li class="mb-3">
-                  <a href="https://convoicar1.recruitee.com" target="_blank" class="text-white">
-                    Nous rejoindre
-                  </a>
-                </li>
-                <li class="mb-3">
                   <a href="./contact" class="text-white">
                     Nous contacter
-                  </a>
-                </li>
-                <li class="mb-3">
-                  <a href="./contact" class="text-white">
-                    Presse
                   </a>
                 </li>
               </ul>
@@ -784,6 +784,7 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
+    <script src="./assets/js/i18n.js"></script>
       
   </body>
 </html>

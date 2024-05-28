@@ -7,7 +7,7 @@
 
 
     <!-- Primary Meta Tags -->
-    <title>Brikks : qui sommes-nous</title>
+    <title data-translate=@@data-translate>Brikks : qui sommes-nous</title>
     <meta name="title" content="Brikks Services de Jockeys">
     <meta name="description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
 
@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
     <link rel="stylesheet" href="./assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.2/css/flag-icons.min.css">
 
     <!-- Map -->
     <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' /> -->
@@ -118,7 +120,13 @@
 
           <!-- Button -->
           <ul class="navbar-nav ml-auto">
-            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://client.convoicar.fr/" target="_blank">
+            <!--
+              <select id="language-selector">
+                <option value="fr">🇫🇷</option>
+                <option value="es">🇪🇸</option>
+              </select> 
+            !-->
+            <a class="navbar-btn btn btn-sm btn-primary-soft lift m-1" href="https://app.brikks.co" target="_blank">
               Se connecter
             </a>
             <a class="navbar-btn btn btn-sm btn-primary lift m-1" href="./contact" target="_blank">
@@ -163,7 +171,7 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted text-justify mb-7 mb-md-9">
-              BRIKKS est la marque sœur de CONVOICAR, leader depuis 8 ans du convoyage automobile pour les distributeurs automobiles. Présent dans 2 pays, BRIKKS propose de répondre à la problématique de rentabilisation financière des véhicules de courtoisie dans les concessions automobiles. Notre objectif, permettre aux distributeurs d'optimiser la gestion financière et logistique de leurs véhicules via une approche novatrice et entièrement digitale.
+              Brikks propose un nouvel élan dans la gestion des services de mobilité. Startup de la mobilité, connue pour notre service de réservation de jockey n°1 en France. Brikks a été créée il y a 6 ans, dans 20 villes françaises, et nous gérons plus de 50 000 opérations de mobilité avec le réseau de distribution automobile français et élu service client de l’année 2022. Notre objectif, faire germer de nouveaux usages automobiles, avec notre plateforme digitale et notre équipe. Nous gérons la flotte des concessionnaires et déployons les solutions de mobilité que le concessionnaire souhaite proposer à ses clients comme la livraison du véhicule à domicile ou le service jokey pour emmener le véhicule en entretien, permettant au propriétaire du véhicule de mieux gérer son temps.
             </p>
 
             <!-- Heading -->
@@ -173,17 +181,9 @@
 
             <!-- Text -->
             <p class="font-size-lg text-muted text-justify mb-7 mb-md-9">
-              <b>Répondre aux enjeux des concessions</b>
-              <br/>
-              Sur un marché automobile en pleine évolution, les concessionnaires sont en perpétuelles réflexions quant aux
-              nouveaux services pouvant apporter une valeur ajoutée à l'optimisation financière de l'entreprise. BRIKKS se
-              positionne comme un facilitateur des changements organisationnels et stratégiques liés à ces évolutions.
-              <br/>
-              <br/>
-              <b>Mettre l'automobiliste au cœur des projets digitaux :</b>
-              <br/>
-              BRIKKS met le parcours utilisateur au cœur de sa stratégie. Ainsi, la solution IT permet un accès à la prise de rdv
-              pour un véhicule de courtoisie optimisé et entièrement digital pour le client d'une concession.
+              Notre service a une utilité à deux niveaux :<br />
+              Pour l'automobiliste, l’objectif est d’éviter à l’automobiliste de se déplacer et de lui faire gagner environ 4 heures de son temps en prenant en charge son véhicule sur son lieu de travail ou à son domicile, en le conduisant à l’atelier et en lui restituant une fois l’entretien réalisé.<br />
+              Pour l'atelier ou la concession automobile, puisque ce service permet  d'éviter un stockage trop important des véhicules dans les ateliers, d'éviter les amendes sur les véhicules stationnées dans la rue et de proposer un complément ou un substitut au véhicule de courtoisie puisque le service Brikks est proposé à 100% des clients.
             </p>
           </div>
         </div> <!-- / .row -->
@@ -239,18 +239,8 @@
                 </a>
               </li>
               <li class="mb-3">
-                <a href="https://convoicar1.recruitee.com" target="_blank" class="text-white">
-                  Nous rejoindre
-                </a>
-              </li>
-              <li class="mb-3">
                 <a href="./contact" class="text-white">
                   Nous contacter
-                </a>
-              </li>
-              <li class="mb-3">
-                <a href="./contact" class="text-white">
-                  Presse
                 </a>
               </li>
             </ul>
@@ -350,6 +340,7 @@
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
 
+    <script src="./assets/js/i18n.js"></script>
       
   </body>
 </html>
