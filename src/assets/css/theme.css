@@ -11307,6 +11307,12 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   .navbar-nav .dropdown > .dropdown-menu.show {
     transform: translate(-50%, 0); } }
 
+#language-selector {
+  border-width: 0px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0); }
+
 .pagination-sm .page-link {
   line-height: 1.6;
   font-size: 1.0625rem; }
