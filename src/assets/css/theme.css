@@ -10962,6 +10962,9 @@ a.card, a.card-body, a.card-footer, a.card-meta {
 .custom-file-label::after {
   font-weight: 600; }
 
+.form-label {
+  color: #384C74; }
+
 .form-label-group {
   position: relative;
   margin-bottom: 1rem; }
@@ -11219,6 +11222,12 @@ a.card, a.card-body, a.card-footer, a.card-meta {
 .navbar-nav .dropdown-link {
   white-space: nowrap; }
 
+.dropdown-link {
+  display: flex; }
+
+.dropdown-link-image {
+  order: -1; }
+
 .navbar-nav .dropdown > .dropdown-toggle::after {
   display: none; }
 
@@ -11312,6 +11321,59 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   border: none;
   outline: none;
   background-color: rgba(0, 0, 0, 0); }
+
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none; }
+
+.custom-select-language {
+  position: relative;
+  cursor: pointer; }
+
+.custom-select-trigger {
+  position: relative;
+  display: block;
+  padding: 10px; }
+
+.custom-select-trigger .arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  transform: translateY(-50%); }
+
+.custom-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 2;
+  display: none; }
+
+.custom-option {
+  padding-top: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center; }
+
+.custom-option::before {
+  content: attr(data-flag);
+  margin-right: 10px; }
+
+.custom-option:hover {
+  background: #f0f0f0; }
+
+.custom-select-language.open .custom-options {
+  display: block; }
 
 .pagination-sm .page-link {
   line-height: 1.6;
@@ -11678,16 +11740,7 @@ code {
   height: 400px;
   background: no-repeat center center;
   background-size: contain;
-  /* animation: bgChange infinite 8s; */
-  background-image: url("../img/anim-home-brikks2.png");
-}
-/*
-@keyframes bgChange {
-  0%, 20% {
-    background-image: url("../img/anim-home-brikks.png"); }
-  50%, 100% {
-    background-image: url("../img/anim-home-brikks2.png"); } }
-*/
+  background-image: url("../img/anim-home-brikks2.png"); }
 
 .overlay {
   position: relative; }

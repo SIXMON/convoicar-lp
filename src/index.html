@@ -4,7 +4,7 @@
     <link rel="canonical" href="https://brikks.co" />
     @@include("partials/head.html", {
       "pageTitle": "Brikks, plateforme de gestion des mobilités",
-      "data-translate": "pageTitle"
+      "data-translate": "index-title"
     })
   </head>
   <body class="bg-light">
@@ -35,11 +35,12 @@
           <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
             
             <!-- Heading -->
-            <h1 class="display-3" data-translate="pageTitle">
-              <span class="text-primary">Concessionnaires</span> :
-              Rentabilisez vos véhicules de courtoisie<br>
-              <!-- <span class="text-primary" data-toggle="typed" data-options="{&quot;strings&quot;: [&quot;pour votre concession&quot;, &quot;pour votre atelier&quot;]}"></span> !-->
-            </h1>
+            <div>
+              <h1 class="display-3 text-primary" data-translate="concessionaires">Concessionnaires :</h1>
+              <h1 class="display-3" data-translate="index-card-one-title">
+                Rentabilisez vos véhicules de courtoisie
+              </h1>
+            </div>
 
             <!-- Text -->
             <p class="lead text-muted mb-6 mb-md-8">
@@ -47,7 +48,7 @@
             </p>
 
             <!-- Buttons -->
-            <a href="@@webRoot/contact" class="btn btn-primary mr-1 lift">
+            <a href="@@webRoot/contact" class="btn btn-primary mr-1 lift" data-translate="demandez-une-demo">
               Demander une démo <i class="fe fe-arrow-right ml-3"></i>
             </a>
 
@@ -172,7 +173,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <span class="badge badge-pill badge-primary-soft mb-3">
-              <span class="h6">Nos services</span>
+              <span class="h6" data-translate="nos-services">Nos services</span>
             </span>
             <p class="text-muted mb-7 mb-md-9">
             </p>
@@ -190,10 +191,10 @@
                 </div>
               </a>
               <a class="card-body text-center" href="@@webRoot/rentabilisation-vehicule">
-                <h3>
+                <h3 data-translate="index-card-one-title">
                   Rentabilisation des véhicules de courtoisie
                 </h3>
-                <p class="mb-0 text-muted">
+                <p class="mb-0 text-muted" data-translate="index-card-one-desc">
                   Faites des véhicules de courtoisie
                   une opportunité de CA
                   plutôt qu'un poste de coût
@@ -214,11 +215,11 @@
               </a>
 
               <a class="card-body text-center" href="@@webRoot/gestion-de-jockey">
-                <h3>
+                <h3 data-translate="index-card-two-title">
                   Gestion du service Jockey
                 </h3>
-                <p class="mb-0 text-muted">
-                  Rationalisez l’utilisation de votre flotte de courtoisie en la complétant d’un service de Jockey
+                <p class="mb-0 text-muted" data-translate="index-card-two-desc">
+                  Rationalisez l'utilisation de votre flotte de courtoisie en la complétant d’un service de Jockey
                 </p>
               </a>
             </div>
@@ -235,10 +236,10 @@
                 </div>
               </a>
               <a class="card-body text-center" href="@@webRoot/gestion-mobilite-douce">
-                <h3>
+                <h3 data-translate="index-card-three-title">
                   Gestion des mobilités douce
                 </h3>
-                <p class="mb-0 text-muted">
+                <p class="mb-0 text-muted" data-translate="index-card-three-desc">
                   Vous souhaitez intégrer
                   la mobilité douce à
                   vos services atelier ?
@@ -261,17 +262,17 @@
           <div class="col-12 col-md-6">
             
             <!-- Heading -->
-            <h2 class="font-weight-bold">
+            <h2 class="font-weight-bold" data-translate="index-about-title">
               BRIKKS, le digital au service de la performance
             </h2>
 
             <!-- Text -->
             <p class="font-size-lg text-muted text-justify mb-5">
-              Brikks met à disposition de ses clients une plateforme qui permet de suivre et optimiser la gestion financière et logistique de ses véhicules de courtoisie
+              <span data-translate="index-about-desc-one">Brikks met à disposition de ses clients une plateforme qui gère vos demandes en service de mobilité de manière simple et rapide.</span>
               <br><br>
-              L’univers digital né de 8 ans d’expertise s’intègre aisément aux DMS des concessions
+              <span data-translate="index-about-desc-two">L’univers digital né de 8 ans d’expertise s’intègre aisément aux DMS des concessions</span>
             </p>
-            <a href="@@webRoot/plateforme-de-gestion" class="btn btn-primary mb-6 mb-md-0 lift">
+            <a href="@@webRoot/plateforme-de-gestion" class="btn btn-primary mb-6 mb-md-0 lift" data-translate="decouvrir">
               Découvrir <i class="fe fe-arrow-right ml-3"></i>
             </a>
           </div>
@@ -308,11 +309,11 @@
         <div class="row">
           <div class="col-12">
             <!-- Heading -->
-            <h2 class="font-weight-bold text-center">
-              Nous comptons plus de <span class="text-primary">650 clients</span> à travers toute la France
+            <h2 class="font-weight-bold text-center" >
+              <span data-translate="index-review-title-one">Nous comptons plus de</span> <span class="text-primary" data-translate="index-review-title-two">650 clients</span> <span data-translate="index-review-title-three">à travers toute la France</span>
             </h2>
             <!-- Text -->
-            <p class="font-size-lg text-muted text-center mb-5">
+            <p class="font-size-lg text-muted text-center mb-5" data-translate="index-review-desc">
               Et ils nous font confiance...
             </p>
           </div>
@@ -324,7 +325,7 @@
                 <div class="text-center font-size-lg text-primary mb-4">
                   <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
                 </div>
-                <p class="mb-3 text-muted">
+                <p class="mb-3 text-muted" data-translate="index-review-card-one-desc">
                   J’ai connu le service proposé par BRIKKS au sein de ma concession.<br />
                   Ils font preuves d’une très bonne réactivé et nous apportent toujours une solution pour nos clients.<br />
                   Je suis très satisfaite de mon expérience avec BRIKKS et avoir un contact privilégié est un énorme plus.
@@ -342,7 +343,7 @@
                 <div class="text-center font-size-lg text-primary mb-4">
                   <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
                 </div>
-                <p class="mb-3 text-muted">
+                <p class="mb-3 text-muted" data-translate="index-review-card-two-desc">
                   J’ai découvert le service BRIKKS par internet. Grâce à eux, les sorties de véhicules sont fluidifiées et la prestation est de qualité.<br />
                   Le retour des véhicules est rapide et la prestation premium est un réel plus pour nos clients.<br />
                   Je recommanderai BRIKKS pour leur efficacité et leur bonne communication.
@@ -360,8 +361,8 @@
                 <div class="text-center font-size-lg text-primary mb-4">
                   <i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i>
                 </div>
-                <p class="mb-3 text-muted">
-                  BRIKKS m’a été recommandé par une connaissance.<br />
+                <p class="mb-3 text-muted" data-translate="index-review-card-three-desc">
+                  BRIKKS m'a été recommandé par une connaissance.<br />
                   Nous avions un besoin important en conciergerie pour fluidifier les entrées et sorties des véhicules.<br />
                   BRIKKS nous a donc semblé être la solution idéale ! Je recommande BRIKKS pour leur disponibilité et efficacité !
                 </p>
