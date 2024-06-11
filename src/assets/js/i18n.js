@@ -1,5 +1,5 @@
 async function loadTranslations(lang) {
-    const response = await fetch(`/locales/${lang}.json`);
+    const response = await fetch(`./locales/${lang}.json`);
     return response.json();
 }
 

@@ -247,7 +247,7 @@ gulp.task('copy-locales', () => {
     .pipe(gulp.dest('dist/locales'));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html', 'copy-locales'));
+gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs', 'copy-locales'), 'scss', 'html'));
 gulp.task('build:preview', gulp.series(gulp.parallel('clean:tmp', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html:preview'));
 gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss', 'copy-locales'), gulp.parallel('browsersync', 'watch')));
 
