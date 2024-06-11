@@ -35,6 +35,10 @@
 //
 // Works for base size only
 
+.form-label {
+  color: $input-placeholder-color;
+}
+
 .form-label-group {
   position: relative;
   margin-bottom: $form-group-margin-bottom;
