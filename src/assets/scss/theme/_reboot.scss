@@ -3,6 +3,10 @@
 // Extended from Bootstrap
 //
 
-html, body {
+html {
   overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
 }
