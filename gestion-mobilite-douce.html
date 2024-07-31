@@ -59,9 +59,6 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://brikks.co/">
-    <meta property="og:title" content="Brikks Services de Jockeys">
-    <meta property="og:description" content="Brikks propose des services de jockeys pour l’entretien automobile, pour la livraison de véhicule neuf ou d’occasion mais également pour les flottes de véhicule en auto-partage ou en parc">
     <meta property="og:image" content="https://brikks.co/assets/img/convoicar-services-de-jockey.png">
 
     <!-- Twitter -->
@@ -90,9 +87,6 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
-
-
-
   </head>
   <body>
 
@@ -474,122 +468,10 @@
       
             <!-- Card -->
             <div class="card card-border border-secondary shadow-light-lg" data-jarallax-element="-40">
-              <div class="card-body">
-                <div class="row justify-content-center">
-                  <div class="col-12 col-xl-11">
-          
-                    <!-- Heading -->
-                    <h2 class="font-weight-bold text-center mb-1" data-translate="request-title">
-                      Vous avez une requête ?
-                    </h2>
-
-                    <!-- Text -->
-                    <p class="font-size-lg text-center text-muted mb-6 mb-md-8" data-translate="request-desc">
-                      Nous prendrons contact avec vous dans les plus brefs délais
-                    </p>
-
-                    <!-- Form -->
-                    <form action="https://formsubmit.co/070688fd3b91e3b1c100b38a2392c6d2" method="POST" >
-
-                      <input type="hidden" name="_webhook" value="https://script.google.com/macros/s/AKfycbywJpSut4RXrRnCmV41j-Q7JbuhrkC9g05sOZ8uJJ2uZFYLk-U/exec">
-                      <input type="hidden" name="_next" value="https://convoicar.fr/thanks.html">
-                      <input type="hidden" name="_subject" value="Nouveau Contact Brikks">
-                      <input type="hidden" name="_captcha" value="true">
-
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-
-                          <!-- First name -->
-                          <div class="form-group">
-                            <label for="registrationFirstName" class="form-label secondary" data-translate="first-name">Prénom *</label>
-                            <input type="text" name="firstName" class="form-control" id="registrationFirstName" required>
-                          </div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                          <!-- Last name -->
-                          <div class="form-group">
-                            <label for="registrationLastName" class="form-label secondary" data-translate="last-name">Nom *</label>
-                            <input type="text" name="lastName" class="form-control" id="registrationLastName" required>
-                            <!-- <label for="registrationLastName">Nom</label> -->
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 col-md-6">
-
-                          <div class="form-group">
-                            <label for="registrationZipCode" class="form-label secondary" data-translate="zip-code">Code Postal *</label>
-                            <input type="number" name="codePostal" class="form-control" id="registrationZipCode" required>
-                            <!-- <label for="registrationFirstName">Code Postal</label> -->
-                          </div>
-
-                        </div>
-                        <div class="col-12 col-md-6">
-
-                          <div class="form-group">
-                            <label for="registrationPhone" class="form-label secondary" data-translate="phone">Téléphone *</label>
-                            <input type="tel" name="phone" class="form-control" id="registrationPhone" required>
-                            <!-- <label for="registrationLastName">Téléphone</label> -->
-                          </div>
-
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-12">
-                          <!-- Email -->
-                          <div class="form-group">
-                            <label for="registrationEmail" class="form-label secondary" data-translate="email">Email *</label>
-                            <input type="email" name="email" class="form-control" id="registrationEmail" required>
-                            <!-- <label for="registrationEmail">Email</label> -->
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <!-- <label for="vous">Vous êtes ?</label> -->
-                            <select id="vous" name="profession" type="text" class="custom-select" required>
-                              <option data-translate="request-profession-placeholder" disabled selected>Vous êtes ?</option>
-                              <option data-translate="request-profession-one">concessionaire</option>
-                              <option data-translate="request-profession-two">professionnel de l'auto</option>
-                              <option data-translate="request-profession-three">gestionnaire de flotte</option>
-                              <option data-translate="request-profession-four">automobiliste</option>   
-                              <option data-translate="request-profession-five">autre</option>   
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-12">
-                          <div class="form-group">
-                            <!-- <label for="contactMessage">
-                              Message
-                            </label> -->
-                            <label for="contactMessage" class="form-label secondary" data-translate="message">Message</label>
-                            <textarea class="form-control" name="message" id="contactMessage" rows="2"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row justify-content-center">
-                        <div class="col-12">
-                    
-                          <!-- Submit -->
-                          <button type="submit" class="btn btn-block btn-primary mt-3 lift" data-translate="decouvrir-brikks">
-                            Découvrir BRIKKS
-                          </button>
-
-                        </div>
-                      </div>
-
-                    </form>
-            
-                  </div>
-                </div> <!-- / .row -->
+              <div class="card-body m-auto">
+                <button id="typeform_contact" class="navbar-btn btn btn-sm btn-primary-soft lift m-1">
+                  Envoyer une demande
+                </button>
               </div>
             </div>
 
