@@ -14,9 +14,9 @@ const deploy = require('gulp-gh-pages');
 const gulpif = require('gulp-if');
 const npmdist = require('gulp-npm-dist');
 const replace = require('gulp-replace');
-const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
+const sass = require('gulp-sass')(require('sass'));
 
 // Define paths
 const paths = {
@@ -124,6 +124,10 @@ gulp.task('browsersync', function(callback) {
         req.url = '/thanks.html';
       } else if (req.url === '/blog') {
         req.url = '/blog.html'
+      } else if (req.url === '/blogs/arrivee-mobilite') {
+        req.url = '/blogs/arrivee-mobilite.html'
+      } else if (req.url === '/blogs/transformation-digitale') {
+        req.url = '/blogs/transformation-digitale.html'
       }
       return next();
     }

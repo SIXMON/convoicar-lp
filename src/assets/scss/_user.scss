@@ -10,3 +10,46 @@
 .text-dark {
   color: #211f2d!important;
 }
+
+.text-12 {
+  font-size: 12px;
+}
+
+.link-btn {
+  padding: 4px 16px;
+  border-radius: 16px;
+  background-color: #FDC947;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.input-group-custom {
+  border-radius: 8px;
+  border: 0.1rem solid lightgray;
+  padding: 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+   
+  input {
+    border: none !important;
+  }
+
+  input:focus-visible {
+    box-shadow: none !important;
+    border: none !important;
+    outline: none;
+  }
+
+  svg {
+    position: absolute;
+    right: 1rem;
+  }
+}
