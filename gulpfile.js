@@ -128,6 +128,8 @@ gulp.task('browsersync', function(callback) {
         req.url = '/blogs/arrivee-mobilite.html'
       } else if (req.url === '/blogs/transformation-digitale') {
         req.url = '/blogs/transformation-digitale.html'
+      } else if (req.url === '/blogs/limite-pret-courtoisie') {
+        req.url = '/blogs/limite-pret-courtoisie.html'
       }
       return next();
     }
