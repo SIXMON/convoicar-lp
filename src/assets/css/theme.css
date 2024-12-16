@@ -17629,3 +17629,9 @@ ul > li > a {
   position: absolute;
   right: 1rem;
 }
+
+.fit-image {
+  height: -moz-fit-content;
+  height: fit-content;
+  align-self: center;
+}
