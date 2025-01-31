@@ -7,6 +7,30 @@ const blogPosts = [
                     dans des zones urbaines réglementées et proposant d'autres types de mobilités.`,
         url: "/blogs/arrivee-mobilite",
     },
+    {
+        title: "Limite du prêt de véhicule de courtoisie",
+        subtitle: "Le véhicule de courtoisie comme « unique » moyen de transport après-vente en concession?",
+        description: `Après un entretien ou une révision auto, l’automobiliste
+                    une fois vous avoir déposé son véhicule en
+                    concession, repartait avec un véhicule de prêt, dit
+                    aussi de courtoise. À condition que celui-ci l’ait réservé
+                    au préalable. Évidemment, l’offre de véhicules de
+                    courtoisie disponibles en concession est limitée et un
+                    système de réservation est donc nécessaire pour
+                    pouvoir encadrer cette offre et cette demande. Mais
+                    lorsque cette demande est supérieure à l’offre de
+                    véhicules que vous pouvez prêter, vous pouvez peut-
+                    être perdre un client qui a besoin impérativement d’un
+                    moyen de transport pour se déplacer le temps que son
+                    véhicule soit immobilisé au garage. Il pourra aller voir
+                    ailleurs, trouver un autre moyen par le biais de ses
+                    connaissances pour avoir un véhicule de prêt, trouver
+                    un loueur, etc. Cependant, son expérience client en
+                    sera impacté par le fait qu’il n’ait pas eu de solution de
+                    mobilité proposée par sa concession ou quelconque
+                    moyen mis en place.`,
+        url: "/blogs/limite-pret-courtoisie",
+    }
 ];
 
 function createBlogCard(post) {
